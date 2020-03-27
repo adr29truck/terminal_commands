@@ -1,1 +1,1 @@
-ruby D:\Developing\terminal_commands\sinatra_template.rb
+ruby D:\Developing\terminal_commands\scripts\sinatra\sinatra_template.rb
