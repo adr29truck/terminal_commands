@@ -71,19 +71,20 @@ a href="/"
   h2 Return to saftey')
 
   f = File.new('views/layout.slim', 'w+')
-  f.puts('doctype html
-    html lang="#{@language}"
-      head
-        meta charset="UTF-8" /
-        meta content="width=device-width, initial-scale=1.0" name="viewport" /
-        title Adrian Portfolio
-      body
-        link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /
-        link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" /
-        link href="css/main.css" rel="stylesheet" /
-        script src="js/main.js"
+  f.puts('
+doctype html
+  html lang="en"
+    head
+      meta charset="UTF-8" /
+      meta content="width=device-width, initial-scale=1.0" name="viewport" /
+      title Adrian Portfolio
+    body
+      link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /
+      link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" /
+      link href="css/main.css" rel="stylesheet" /
+      script src="js/main.js"
 
-        ==yield
+      ==yield
 
         ')
 end
