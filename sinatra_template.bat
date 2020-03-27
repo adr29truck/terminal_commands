@@ -1,1 +1,1 @@
-ruby sinatra_template.rb
+ruby D:\Developing\terminal_commands\sinatra_template.rb

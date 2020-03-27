@@ -90,13 +90,14 @@ end
 
 def createReadMe()
   puts 'Creating README'
-  f = File.new('README.md', 'w+')
+  f = File.new('README.md', 'w+') unless File.exists?('README.md')
 end
 
 
 
 def createLicense
   puts 'Creating LICENSE'
+  return if File.exists?('public')
   f = File.new('LICENSE', 'w+')
   f.puts("                   GNU LESSER GENERAL PUBLIC LICENSE
               Version 3, 29 June 2007
