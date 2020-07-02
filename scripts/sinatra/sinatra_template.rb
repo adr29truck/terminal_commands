@@ -20,7 +20,7 @@ def createFolders
   Dir.mkdir 'public/img' unless File.exists?('public/img')
   Dir.mkdir 'modules' unless File.exists?('modules')
   Dir.mkdir 'views' unless File.exists?('views')
-  f = File.new('public/main.css', 'w+')
+  f = File.new('public/css/main.css', 'w+')
   f.puts('
 :root {
   --main-background-color: #26262d;
@@ -48,7 +48,6 @@ def createFolders
 }
 
 .error {
-  min-height: calc(100vh - 10em);
   padding: 10em 1em 0 1em;
   display: grid;
   grid-template-rows: auto auto;
